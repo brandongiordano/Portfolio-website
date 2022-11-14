@@ -1,0 +1,146 @@
+/* Universal Selector */
+* {
+  margin:0;
+  padding:0;  
+}
+
+/* Element Selectors */
+body {
+
+  text-align: center;
+  font-family: "Goudy Bookletter 1911", sans-serif;
+  font-size: 20px;
+  background-color: #fff;
+  color: #0b0418;
+  display: flex;
+}
+
+h1,
+h2 {
+  margin: 20px;
+}
+
+main {
+  padding: 60px 0;
+  justify-content: space-between;
+}
+
+li {
+  display: inline;
+  padding: 0px 20px;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: #FDF8F5;
+}
+
+header {
+  height: 60px;
+  width: 100%;
+  line-height: 60px;
+  background-color: #715e95;
+}
+
+button:hover {
+  cursor:pointer
+}
+
+header {
+  position: fixed;
+  border-bottom: 10px solid #171718;
+}
+
+figure {
+  margin-bottom: 40px;
+}
+
+#pfp {
+  max-width: 50%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 20px auto;
+}
+
+img {
+  width: 300px;
+  margin-right: 50px;
+}
+
+img:hover:not(#pfp) {
+  transform: scale(1.25);
+  box-shadow:
+  0 0 30px 15px rgb(255, 255, 255),  /* inner white */
+  0 0 30px 15px rgb(170, 2, 170); /* middle magenta */
+   /* outer cyan */
+}
+
+
+#coming-soon {
+  border-radius: 5px;
+  width: 200px;
+}
+
+section {
+  margin-bottom: 0;
+  padding: 20px 10px 40px 10px;
+  border-bottom: 2px solid #25252e;
+  background-color:  #fff;
+}
+
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+  border: 5px solid #25252e;
+  border-radius: 5px;
+  background-color: #715e95;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+  
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid #4F4846;
+}
+
+textarea {
+  vertical-align: top;
+  height: 60px;
+}
+
+p {
+  color: #171718;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+  
+button {
+  height: 40px;
+  width: 120px;
+  background-color: #4F4846;
+  color: #FDF8F5;
+}
+ 
+/* Class Selectors */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+@media screen and (max-width: 768px) {
+  nav li {
+    flex-direction: column;
+  }
+}
